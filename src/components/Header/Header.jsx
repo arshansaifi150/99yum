@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import {useSelector} from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import Hamberger from '../../Components copy/Hamberger'
+import logo from '../../assets/logo.png'
 
 function Header() {
   const authStatus = useSelector((state) => state.auth.status)
@@ -61,7 +62,7 @@ function Header() {
         <nav className='md:flex md:items-center bg-white md:justify-between md:flex-wrap hidden'>
         <div className=' hidden md:block'>
             <Link to='/'>
-              <img src="\src\assets\logo.png" alt="" className='h-24 w-24' />
+              <img src={logo} alt="" className='h-24 w-24' />
             </Link>
           </div>
           <ul className='hidden md:flex'>
