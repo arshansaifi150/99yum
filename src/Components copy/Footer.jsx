@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import instagramLogo from '../assets/instagram.png';
-import facebookLogo from '../assets/facebook.png';
-import twitterLogo from '../assets/x.png';
-import pic1 from '../assets/logo.png';
+import instagramLogo from '../../assets/instagram.png';
+import facebookLogo from '../../assets/facebook.png';
+import twitterLogo from '../../assets/x.png';
+import pic1 from '../../assets/logo.png';
 
 
 function Footer() {
@@ -12,7 +12,7 @@ function Footer() {
       <div className='container mx-auto flex flex-col items-center'>
         <div className='mb-8 text-center'>
           <h1 className='text-4xl font-bold mb-4'>Navigation</h1>
-          <ul className='flex flex-col md:flex md:flex-row gap-8 text-lg'>
+          <ul className='flex flex-row gap-8 text-lg'>
             <Link to='/'>
               <li className='hover:text-orange-300 transition duration-300'>Home</li>
             </Link>
